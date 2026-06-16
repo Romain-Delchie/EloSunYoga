@@ -6,8 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<div className="container"></div>} />
-        <Route path="/brouillon" element={<ConstructionPage />} />
+        <Route path="/" element={<ConstructionPage />} />
       </Routes>
     </BrowserRouter>
   );
