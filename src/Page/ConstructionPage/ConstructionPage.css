@@ -1,0 +1,159 @@
+.construction {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("/construction-img.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.construction__overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.32);
+  backdrop-filter: brightness(0.92);
+}
+
+.construction__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1100px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.construction__brand {
+  margin-bottom: 3rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.construction__title {
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  line-height: 0.95;
+font-size: clamp(4rem, 9vw, 8rem);
+}
+
+.construction__subtitle {
+  margin-top: 2rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+
+  max-width: 650px;
+}
+
+.construction__badge {
+  margin-top: 2rem;
+
+  min-width: 200px;
+
+  background: rgba(255, 255, 255, 0.92);
+  color: #5d514d;
+
+  border-radius: 999px;
+
+  padding: 10px 20px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.construction__opening {
+  margin-top: 2.5rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 300;
+
+  max-width: 900px;
+}
+
+.construction__socials {
+  margin-top: 2rem;
+
+  display: flex;
+  gap: 1.75rem;
+}
+
+.construction__socials a {
+  color: white;
+
+  font-size: 2.2rem;
+
+  transition: transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.construction__socials a:hover {
+  transform: translateY(-3px);
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .construction__brand {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .construction__title {
+    font-size: clamp(3.5rem, 15vw, 5rem);
+    line-height: 1;
+  }
+
+  .construction__subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .construction__badge {
+    min-width: 180px;
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  .construction__opening {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+
+  .construction__socials a {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .construction__content {
+    padding: 1.25rem;
+  }
+
+  .construction__title {
+    font-size: 3.5rem;
+  }
+
+  .construction__opening {
+    font-size: 1rem;
+  }
+}
