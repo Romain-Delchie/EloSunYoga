@@ -10,7 +10,7 @@ const [popupOpen, setPopupOpen] = useState(false);
 useEffect(() => {
   const timer = setTimeout(() => {
     setPopupOpen(true);
-  }, 2000);
+  }, 1000);
 
   return () => clearTimeout(timer);
 }, []);
