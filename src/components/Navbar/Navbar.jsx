@@ -3,16 +3,22 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import "./Navbar.css";
+gsap.registerPlugin(ScrollToPlugin);
 
 const Navbar = () => {
-    gsap.registerPlugin(ScrollToPlugin);
-    const goTo = (id) => {
-      gsap.to(window, {
-        duration: 1.1,
-       ease: "back.out(1.1)",
-        scrollTo: "#" + id,
-      });
-    };
+  const goTo = (id) => {
+    console.log(id);
+    console.log(document.getElementById(id));
+
+    gsap.to(window, {
+      duration: 1,
+      ease: "power3.out",
+      scrollTo: {
+        y: "#" + id,
+        offsetY: 80,
+      },
+    });
+  };
   return (
     <header className="navbar">
       <div className="navbar-container">
@@ -22,7 +28,7 @@ const Navbar = () => {
           <a href="#yoga">YOGA</a>
           <a href="#pricing">TARIFS & PLANNING</a>
           <a href="#pricing">CONTACT</a> */}
-        
+          <ul>
             <li onClick={() => goTo("home")}>ACCUEIL</li>
 
             <li onClick={() => goTo("about")}>À PROPOS</li>
@@ -32,6 +38,7 @@ const Navbar = () => {
             <li onClick={() => goTo("pricing")}>TARIFS & PLANNING</li>
 
             <li onClick={() => goTo("contact")}>CONTACT</li>
+          </ul>
         </nav>
 
         <div className="social">

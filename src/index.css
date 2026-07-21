@@ -1,11 +1,1 @@
 
-html,
-body,
-#root{
-    perspective: 1800px;
-    overflow-x: hidden;
-}
-
-main{
-    transform-style: preserve-3d;
-}
