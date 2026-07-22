@@ -67,17 +67,7 @@ section{
 
 }
 
-.about-right{
-
-    position:relative;
-
-}
-
 .about-right img{
-
-    position:sticky;
-    top:120px;
-
     width:100%;
     height:90vh;
 

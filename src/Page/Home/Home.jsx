@@ -1,6 +1,8 @@
 import Navbar from "../../components/Navbar/Navbar";
 import About from "../About/About";
+import Contact from "../Contact/Contact";
 import Hero from "../Hero/Hero";
+import Pricing from "../Princing/Pricing";
 import Yoga from "../Yoga/Yoga";
 
 
@@ -14,7 +16,9 @@ const Home = () => {
       <main className="home">
               <Hero />
               <About />
-              <Yoga />
+        <Yoga />
+        <Pricing />
+        <Contact />
       </main>
     </>
   );

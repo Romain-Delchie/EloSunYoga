@@ -1,0 +1,159 @@
+.contact{
+
+    min-height:100vh;
+
+    background:url("/construction-img.jpg") center center/cover no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    padding:100px 20px;
+
+}
+
+.contact-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(2px);
+
+}
+
+.contact-card{
+
+    position:relative;
+
+    z-index:2;
+
+    background:white;
+
+    width:760px;
+
+    max-width:95%;
+
+    padding:80px;
+
+}
+
+.contact-card h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-style:italic;
+
+    color:#97140f;
+
+    text-align:center;
+
+    font-size:4rem;
+
+    font-weight:400;
+
+    margin-bottom:35px;
+
+}
+
+.contact-info{
+
+    text-align:center;
+
+    color:#8d7a70;
+
+    margin-bottom:55px;
+
+    font-size:1.2rem;
+
+}
+
+.contact form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.contact input,
+.contact textarea{
+
+    border:1px solid #d9c8bc;
+
+    padding:18px;
+
+    font-size:1rem;
+
+    outline:none;
+
+    background:white;
+
+    transition:.3s;
+
+}
+
+.contact textarea{
+
+    resize:none;
+
+    height:190px;
+
+}
+
+.contact input:focus,
+.contact textarea:focus{
+
+    border-color:#97140f;
+
+}
+
+.contact button{
+
+    align-self:flex-end;
+
+    width:150px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#97140f;
+
+    color:white;
+
+    font-size:1.1rem;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.contact button:hover{
+
+    background:#b21711;
+
+    transform:translateY(-3px);
+
+}
+
+.success{
+
+    text-align:center;
+
+    color:#2b8c4b;
+
+    margin-top:25px;
+
+}

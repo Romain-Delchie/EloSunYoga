@@ -1,0 +1,150 @@
+.pricing{
+
+    min-height:100vh;
+    background:#f7efdf;
+
+    padding:120px 8% 100px;
+
+}
+
+.pricing h2{
+
+    font-family:"Cormorant Garamond",serif;
+    font-size:4.5rem;
+    font-weight:500;
+
+    margin-bottom:60px;
+
+    color:#181818;
+
+}
+
+.pricing-top{
+
+    display:grid;
+    grid-template-columns:420px 1fr;
+
+    gap:90px;
+
+    align-items:start;
+
+}
+
+.pricing-image{
+
+    overflow:hidden;
+
+}
+
+.pricing-image img{
+
+    width:100%;
+    display:block;
+
+}
+
+.pricing-content{
+
+    font-family:"Montserrat",sans-serif;
+
+    color:#222;
+
+}
+
+.pricing-content h3{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:2.4rem;
+
+    text-decoration:underline;
+
+    margin-bottom:45px;
+
+}
+
+.pricing-block{
+
+    margin-bottom:60px;
+
+}
+
+.pricing-block p{
+
+    font-size:1.5rem;
+
+    line-height:1.8;
+
+    margin-bottom:10px;
+
+}
+
+.pricing-block ul{
+
+    padding-left:28px;
+
+    margin:18px 0 18px;
+
+}
+
+.pricing-block li{
+
+    font-size:1.45rem;
+
+    line-height:2;
+
+}
+
+.company{
+
+    margin-top:90px;
+
+    max-width:900px;
+
+}
+
+.company h3{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:2.3rem;
+
+    text-decoration:underline;
+
+    margin-bottom:40px;
+
+}
+
+.company p{
+
+    font-family:"Montserrat",sans-serif;
+
+    font-size:1.45rem;
+
+    color:#333;
+
+    line-height:2;
+
+    margin-bottom:12px;
+
+}
+
+@media(max-width:1100px){
+
+.pricing-top{
+
+    grid-template-columns:1fr;
+
+    gap:60px;
+
+}
+
+.pricing-image{
+
+    max-width:420px;
+
+    margin:auto;
+
+}
+
+}

@@ -40,7 +40,7 @@
 
 }
 
-nav ul{
+nav {
 
     display:flex;
 
@@ -48,7 +48,7 @@ nav ul{
 
 }
 
-nav ul li{
+li{
 
     list-style: none;
     text-decoration:none;
@@ -68,13 +68,13 @@ nav ul li{
 
 }
 
-nav ul li:hover{
+li:hover{
 
     color:#b54d29;
 
 }
 
-nav ul li.active{
+ li.active{
 
     color:#e9d7df;
 
@@ -105,5 +105,61 @@ nav ul li.active{
 .social a:hover{
 
     color:#b54d29;
+
+}
+
+.burger{
+    display:none;
+    font-size:30px;
+    color:#7d3b35;
+    cursor:pointer;
+    z-index:1002;
+}
+@media (max-width:900px){
+
+.navbar{
+    height:70px;
+}
+
+.navbar-container{
+    justify-content:space-between;
+}
+
+.burger{
+    display:block;
+}
+
+.nav{
+    position:fixed;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100vh;
+
+    background:#faf7f3;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+
+    transition:left .45s cubic-bezier(.19,1,.22,1);
+}
+
+.nav.open{
+    left:0;
+}
+
+li{
+    list-style:none;
+    font-size:2rem;
+    letter-spacing:2px;
+    cursor:pointer;
+}
+
+.social{
+    display:none;
+}
 
 }
