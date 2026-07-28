@@ -5,9 +5,7 @@
     background:url("/construction-img.jpg") center center/cover no-repeat;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
     position:relative;
@@ -19,7 +17,6 @@
 .contact-overlay{
 
     position:absolute;
-
     inset:0;
 
     background:rgba(0,0,0,.25);
@@ -31,13 +28,11 @@
 .contact-card{
 
     position:relative;
-
     z-index:2;
 
     background:white;
 
     width:760px;
-
     max-width:95%;
 
     padding:80px;
@@ -47,16 +42,14 @@
 .contact-card h2{
 
     font-family:"Cormorant Garamond",serif;
-
     font-style:italic;
+    font-weight:400;
+
+    font-size:4rem;
 
     color:#97140f;
 
     text-align:center;
-
-    font-size:4rem;
-
-    font-weight:400;
 
     margin-bottom:35px;
 
@@ -64,22 +57,45 @@
 
 .contact-info{
 
-    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
 
-    color:#8d7a70;
+    flex-wrap:wrap;
 
     margin-bottom:55px;
 
+}
+
+.contact-info a{
+
+    text-decoration:none;
+
+    color:#8d7a70;
+
     font-size:1.2rem;
+
+    transition:.3s;
+
+}
+
+.contact-info a:hover{
+
+    color:#97140f;
+
+}
+
+.contact-info span{
+
+    color:#8d7a70;
 
 }
 
 .contact form{
 
     display:flex;
-
     flex-direction:column;
-
     gap:15px;
 
 }
@@ -89,13 +105,13 @@
 
     border:1px solid #d9c8bc;
 
+    background:white;
+
     padding:18px;
 
     font-size:1rem;
 
     outline:none;
-
-    background:white;
 
     transition:.3s;
 
@@ -121,7 +137,6 @@
     align-self:flex-end;
 
     width:150px;
-
     height:55px;
 
     border:none;
@@ -150,10 +165,184 @@
 
 .success{
 
+    margin-top:25px;
+
     text-align:center;
 
     color:#2b8c4b;
 
-    margin-top:25px;
+}
+
+/* ---------- TABLETTE ---------- */
+
+@media(max-width:900px){
+
+.contact{
+
+    padding:80px 20px;
+
+}
+
+.contact-card{
+
+    width:100%;
+    max-width:700px;
+
+    padding:60px 40px;
+
+}
+
+.contact-card h2{
+
+    font-size:3.2rem;
+
+}
+
+.contact-info a{
+
+    font-size:1rem;
+
+}
+
+.contact input,
+.contact textarea{
+
+    padding:16px;
+
+}
+
+.contact textarea{
+
+    height:170px;
+
+}
+
+.contact button{
+
+    width:100%;
+
+    align-self:stretch;
+
+}
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:600px){
+
+.contact{
+
+    padding:60px 15px;
+
+}
+
+.contact-card{
+
+    padding:35px 22px;
+
+    border-radius:12px;
+
+}
+
+.contact-card h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:25px;
+
+}
+
+.contact-info{
+
+    flex-direction:column;
+
+    gap:8px;
+
+    margin-bottom:35px;
+
+}
+
+.contact-info span{
+
+    display:none;
+
+}
+
+.contact-info a{
+
+    font-size:.95rem;
+
+}
+
+.contact input,
+.contact textarea{
+
+    font-size:.95rem;
+
+    padding:14px;
+
+}
+
+.contact textarea{
+
+    height:150px;
+
+}
+
+.contact button{
+
+    width:100%;
+
+    height:50px;
+
+    font-size:1rem;
+
+}
+
+.success{
+
+    font-size:.95rem;
+
+}
+
+}
+
+/* ---------- PETITS MOBILES ---------- */
+
+@media(max-width:380px){
+
+.contact-card{
+
+    padding:25px 18px;
+
+}
+
+.contact-card h2{
+
+    font-size:2.1rem;
+
+}
+
+.contact-info a{
+
+    font-size:.9rem;
+
+}
+
+.contact input,
+.contact textarea{
+
+    padding:12px;
+
+    font-size:.9rem;
+
+}
+
+.contact textarea{
+
+    height:130px;
+
+}
 
 }

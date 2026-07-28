@@ -41,9 +41,13 @@ export default function Contact() {
       <div className="contact-card">
         <h2>Contactez-moi</h2>
 
-        <p className="contact-info">
-          elosunyoga@gmail.com &nbsp;&nbsp; | &nbsp;&nbsp; 06.08.34.91.03
-        </p>
+        <div className="contact-info">
+          <a href="mailto:elosunyoga@gmail.com">elosunyoga@gmail.com</a>
+
+          <span>|</span>
+
+          <a href="tel:+33608349103">06.08.34.91.03</a>
+        </div>
 
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder="Nom" required />
