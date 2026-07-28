@@ -11,56 +11,47 @@ export default function About() {
 const sectionRef = useRef(null);
 const imageRef = useRef(null);
 const leftRef = useRef(null);
-  useGSAP(() => {
-    const section = sectionRef.current;
-    const image = imageRef.current;
-    const left = leftRef.current;
+ useGSAP(() => {
+   const mm = gsap.matchMedia();
 
-    const distance = () => {
-      // hauteur réelle de la section
-      const sectionHeight = section.offsetHeight;
+   mm.add("(min-width: 1101px)", () => {
+     const section = sectionRef.current;
+     const image = imageRef.current;
+     const left = leftRef.current;
 
-      // hauteur réelle de l'image
-      const imageHeight = image.offsetHeight;
+     const distance = () => {
+       const sectionHeight = section.offsetHeight;
+       const imageHeight = image.offsetHeight;
 
-      // l'image descend jusqu'au bas de la section
-      return sectionHeight - imageHeight - 160;
-    };
+       return sectionHeight - imageHeight - 160;
+     };
 
-    gsap.to(image, {
-      y: distance,
+     gsap.to(image, {
+       y: distance,
+       ease: "none",
+       scrollTrigger: {
+         trigger: section,
+         start: "top top",
+         end: "bottom bottom",
+         scrub: 1,
+         invalidateOnRefresh: true,
+       },
+     });
 
-      ease: "none",
+     gsap.to(left, {
+       y: 70,
+       ease: "none",
+       scrollTrigger: {
+         trigger: section,
+         start: "top top",
+         end: "bottom bottom",
+         scrub: 1,
+       },
+     });
+   });
 
-      scrollTrigger: {
-        trigger: section,
-
-        start: "top top",
-
-        end: "bottom bottom",
-
-        scrub: 1,
-
-        invalidateOnRefresh: true,
-      },
-    });
-
-    gsap.to(left, {
-      y: 70,
-
-      ease: "none",
-
-      scrollTrigger: {
-        trigger: section,
-
-        start: "top top",
-
-        end: "bottom bottom",
-
-        scrub: 1,
-      },
-    });
-  });
+   return () => mm.revert();
+ }, []);
   return (
     <section className="about" id="about" ref={sectionRef}>
       <div className="about-left" ref={leftRef}>
