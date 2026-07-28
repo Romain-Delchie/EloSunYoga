@@ -45,6 +45,28 @@ section{
     margin-top: -30px;
     color: #F8F6F2;
     font-family: "Cormorant Garamond", serif;
+    text-align: center;
     font-size: 2.2rem;
     letter-spacing: 2px;
+}
+
+@media (max-width:800px){
+    .hero-logo {
+        width: 400px;
+    }
+
+    .hero-content p {
+  font-size: 1.8rem;
+    margin-top: -20px;
+}
+}
+
+@media (max-width:400px){
+        .hero-logo {
+        width: 250px;
+    }
+    .hero-content p {
+        margin-top: -10px;
+  font-size: 1.4rem;
+}
 }
