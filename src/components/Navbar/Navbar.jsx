@@ -38,11 +38,11 @@ const Navbar = () => {
         </nav>
 
         <div className="social">
-          <a href="#">
+          <a href="https://www.instagram.com/elo.sun.yoga?igsh=MWcxa3Y5dXRtYjVsbw%3D%3D&utm_source=qr">
             <FaInstagram />
           </a>
 
-          <a href="#">
+          <a href="https://www.facebook.com/share/1abLAoUnHF/?mibextid=wwXIfr">
             <FaFacebookF />
           </a>
         </div>
