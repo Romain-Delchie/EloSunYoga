@@ -44,6 +44,7 @@ nav {
 
     display:flex;
 
+
     gap:42px;
 
 }
@@ -156,6 +157,7 @@ li{
     font-size:2rem;
     letter-spacing:2px;
     cursor:pointer;
+   text-align: center;
 }
 
 
