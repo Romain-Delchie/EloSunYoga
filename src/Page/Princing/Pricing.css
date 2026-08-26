@@ -1,41 +1,36 @@
 .pricing{
-
+max-width: 1500px;
     min-height:100vh;
     background: #faf7f3;
+margin: auto;
 
-    padding:120px 8% 100px;
 
 }
 
 .pricing h2{
-position: relative;
+    text-align: center;
     font-family:"Cormorant Garamond",serif;
-    font-size:4.5rem;
+    font-size:3.2rem;
     font-weight:400;
-
     margin-bottom:60px;
      color: #5b4636;
 }
 
-.pricing h2::after{
-content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 90px;
-  height: 2px;
-   background-color: #b65a38;
+.pricing h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #b65a38;
+    margin: 18px auto 0;
 }
 
 .pricing-top{
 
-    display:grid;
-    grid-template-columns:420px 1fr;
-
-    gap:90px;
-
-    align-items:start;
-
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding-bottom: 100px;
 }
 
 .pricing-image{
@@ -46,13 +41,17 @@ content: "";
 
 .pricing-image img{
 
-    width:100%;
+    width: 500px;
     display:block;
 
 }
 
 .pricing-content{
-
+display: flex;
+gap:10px;
+flex-direction: column;
+align-items: center;
+justify-content: center;
    font-family: Arial, sans-serif;
    color: #5b4636;
 
@@ -79,7 +78,7 @@ content: "";
 }
 
 .pricing-block{
-    margin-bottom:60px;
+
 font-size:20px;
 }
 
@@ -110,10 +109,22 @@ cursor:default;
   color: #b65a38;
   font-size: 20px;
 }
+
+.pro-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.pro-image img {
+    width: 600px;
+}
+
 .company{
 
     margin-top:90px;
-
+width: 450px;
     max-width:900px;
 
 }
@@ -134,7 +145,7 @@ cursor:default;
 
     font-family: Arial, sans-serif;
 
-    font-size:17px;
+    font-size:20px;
 
      color: #5b4636;
 
@@ -153,13 +164,17 @@ cursor:default;
     gap:60px;
 
 }
-
-.pricing-image{
-
-    max-width:420px;
-
-    margin:auto;
-
+.pricing p {
+font-size: 17px;
 }
 
+.pricing-image img{
+    max-width:420px;
+    width: 350px;
+    margin:auto;
+}
+.pro-image img{
+    max-width:420px;
+    margin:auto;
+}
 }

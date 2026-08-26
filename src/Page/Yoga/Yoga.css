@@ -38,14 +38,10 @@
 
 .yoga-header h2::after {
     content: "";
-
-    display: block;
-
+display: block;
     width: 40px;
     height: 2px;
-
     background: #b65a38;
-
     margin: 18px auto 0;
 }
 
