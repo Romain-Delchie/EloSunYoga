@@ -1,131 +1,308 @@
-.yoga{
-    min-height:100vh;
-    background:#f9f5f2;
-    padding:110px 8vw 80px;
-}
-
-.yoga-header{
-    text-align:center;
-    margin-bottom:80px;
-}
-
-.yoga-header h2{
-    font-family:"Cormorant Garamond",serif;
-    font-size:4.5rem;
-    font-style:italic;
-    font-weight:400;
-    color:#97140f;
-    margin-bottom:18px;
-}
-
-.yoga-header p{
-    font-family:"Cormorant Garamond",serif;
-    font-size:2rem;
-    color:#7f6859;
-    line-height:1.4;
-}
-
-.yoga-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:70px;
-    align-items:flex-start;
-}
-
-.practice-card{
-    text-align:center;
-}
-
-.yoga-card-image {
-    width: 240px;
-    height: 240px;
-    margin: 0 auto 35px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.yoga-card-image img {
+.yoga {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-   transition:
-        transform .8s cubic-bezier(.19,1,.22,1),
-        filter .8s ease;
+    min-height: 100vh;
+
+    background: #f9f5f2;
+
+    padding: 80px 7%;
+
+    box-sizing: border-box;
 }
 
-.practice-card:hover .yoga-card-image img {
-    transform: scale(1.15);
-    filter: brightness(1.08);
+
+/* =========================
+   HEADER
+========================= */
+
+.yoga-header {
+    max-width: 800px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
 }
+
+.yoga-header h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 3.2rem;
+    line-height: 1.1;
+
+    font-style: normal;
+    font-weight: 400;
+
+    color: #5b4636;
+
+    margin: 0 0 22px;
+}
+
+.yoga-header h2::after {
+    content: "";
+
+    display: block;
+
+    width: 40px;
+    height: 2px;
+
+    background: #b65a38;
+
+    margin: 18px auto 0;
+}
+
+.yoga-header p {
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+    line-height: 1.6;
+
+    color: #5b4636;
+
+    margin: 0;
+}
+
+
+/* =========================
+   GRILLE
+========================= */
+
+.yoga-grid {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+/* =========================
+   CARTE
+========================= */
 
 .practice-card {
     text-align: center;
-    transition: transform .45s cubic-bezier(.19,1,.22,1);
+
+    color: #5b4636;
+
+    transition:
+        transform 0.45s cubic-bezier(.19, 1, .22, 1);
 }
 
 .practice-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
 }
 
+
+/* =========================
+   IMAGE
+========================= */
+
 .yoga-card-image {
-    width: 240px;
-    height: 240px;
-    margin: 0 auto 35px;
+    width: 190px;
+    height: 190px;
+
+    margin: 0 auto 25px;
+
     border-radius: 50%;
+
     overflow: hidden;
 }
 
 .yoga-card-image img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
+    display: block;
+
+    border-radius: 50%;
+
     transition:
-        transform .8s cubic-bezier(.19,1,.22,1),
-        filter .8s ease;
+        transform 0.8s cubic-bezier(.19, 1, .22, 1),
+        filter 0.8s ease;
 }
 
 .practice-card:hover .yoga-card-image img {
-    transform: scale(1.15);
-    filter: brightness(1.08);
+    transform: scale(1.1);
+    filter: brightness(1.05);
 }
 
-.practice-card h3{
-    font-family:"Cormorant Garamond",serif;
-    color:#97140f;
-    font-style:italic;
-    font-size:2.2rem;
-    font-weight:500;
-    margin-bottom:40px;
+
+/* =========================
+   TITRE
+========================= */
+
+.practice-card h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.55rem;
+    line-height: 1.1;
+
+    font-style: normal;
+    font-weight: 500;
+
+    color: #97140f;
+
+    margin: 0 0 18px;
 }
 
-.practice-text{
-    max-width:430px;
-    margin:auto;
+
+/* =========================
+   TEXTE
+========================= */
+
+.practice-text {
+    max-width: 280px;
+
+    margin: 0 auto;
+
+    text-align: center;
 }
 
-.practice-text p{
-    font-family:"Montserrat",sans-serif;
-    color:#7b685d;
-    font-size:1.45rem;
-    line-height:2;
-    margin-bottom:20px;
+.practice-text p {
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+    line-height: 1.6;
+
+    color: #5b4636;
+
+    margin: 0 0 14px;
 }
 
-@media(max-width:1100px){
-
-.yoga-grid{
-    grid-template-columns:1fr;
-    gap:90px;
+.practice-text p:last-child {
+    margin-bottom: 0;
 }
 
-.practice-card img{
-    width:220px;
-    height:220px;
+
+/* =========================
+   TABLETTE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .yoga {
+        padding: 75px 7%;
+    }
+
+    .yoga-header {
+        margin-bottom: 55px;
+    }
+
+    .yoga-header h2 {
+        font-size: 2.8rem;
+    }
+
+    .yoga-grid {
+        gap: 40px;
+    }
+
+    .yoga-card-image {
+        width: 170px;
+        height: 170px;
+    }
+
+    .practice-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .practice-text {
+        max-width: 240px;
+    }
+
+    .practice-text p {
+        font-size: 0.78rem;
+    }
 }
 
-.yoga-header h2{
-    font-size:3.6rem;
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .yoga {
+        padding: 65px 7%;
+    }
+
+    .yoga-header {
+        margin-bottom: 50px;
+    }
+
+    .yoga-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .yoga-header p {
+        font-size: 0.88rem;
+    }
+
+    .yoga-grid {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .yoga-card-image {
+        width: 190px;
+        height: 190px;
+    }
+
+    .practice-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .practice-text {
+        max-width: 340px;
+    }
+
+    .practice-text p {
+        font-size: 0.85rem;
+        line-height: 1.65;
+    }
 }
 
+
+/* =========================
+   PETIT MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+    .yoga {
+        padding: 55px 6%;
+    }
+
+    .yoga-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .yoga-header p {
+        font-size: 0.82rem;
+    }
+
+    .yoga-grid {
+        gap: 50px;
+    }
+
+    .yoga-card-image {
+        width: 175px;
+        height: 175px;
+    }
+
+    .practice-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .practice-text {
+        max-width: 300px;
+    }
 }

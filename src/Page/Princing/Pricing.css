@@ -1,22 +1,30 @@
 .pricing{
 
     min-height:100vh;
-    background:#f7efdf;
+    background: #faf7f3;
 
     padding:120px 8% 100px;
 
 }
 
 .pricing h2{
-
+position: relative;
     font-family:"Cormorant Garamond",serif;
     font-size:4.5rem;
-    font-weight:500;
+    font-weight:400;
 
     margin-bottom:60px;
+     color: #5b4636;
+}
 
-    color:#181818;
-
+.pricing h2::after{
+content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 90px;
+  height: 2px;
+   background-color: #b65a38;
 }
 
 .pricing-top{
@@ -45,36 +53,39 @@
 
 .pricing-content{
 
-    font-family:"Montserrat",sans-serif;
-
-    color:#222;
+   font-family: Arial, sans-serif;
+   color: #5b4636;
 
 }
 
 .pricing-content h3{
-
+position: relative;
     font-family:"Cormorant Garamond",serif;
-
+    font-weight: 500;
     font-size:2.4rem;
-
-    text-decoration:underline;
-
     margin-bottom:45px;
+     color: #b65a38;
 
 }
 
+.pricing-content h3::after{
+content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 90px;
+  height: 2px;
+   background-color: #b65a38;
+}
+
 .pricing-block{
-
     margin-bottom:60px;
-
+font-size:20px;
 }
 
 .pricing-block p{
 
-    font-size:1.5rem;
-
     line-height:1.8;
-
     margin-bottom:10px;
 
 }
@@ -89,12 +100,16 @@
 
 .pricing-block li{
 
-    font-size:1.45rem;
-
+    font-size:17px;
+    list-style: disc;
+cursor:default;
     line-height:2;
 
 }
-
+.pricing-block li::marker {
+  color: #b65a38;
+  font-size: 20px;
+}
 .company{
 
     margin-top:90px;
@@ -117,11 +132,11 @@
 
 .company p{
 
-    font-family:"Montserrat",sans-serif;
+    font-family: Arial, sans-serif;
 
-    font-size:1.45rem;
+    font-size:17px;
 
-    color:#333;
+     color: #5b4636;
 
     line-height:2;
 

@@ -1,96 +1,292 @@
-.about{
-    width:100%;
-    background:#faf7f3;
-    display:grid;
-    grid-template-columns:1.6fr 0.8fr;
-    gap:100px;
-    padding:140px 8%;
-}
-section{
+.about {
+    width: 100%;
+    max-width: 1400px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #faf7f3;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
 
-    scroll-snap-align:start;
+    padding: 80px 7%;
 
-}
-
-.about-left{
-    color:#8f2723;
+    box-sizing: border-box;
 }
 
-.about h2{
-
-    font-family:"Cormorant Garamond", serif;
-    font-size:4.2rem;
-    font-style:italic;
-    font-weight:400;
-    margin-bottom:30px;
-
+section {
+    scroll-snap-align: start;
 }
 
-.intro{
 
-    font-family:"Cormorant Garamond", serif;
-    font-size:2.1rem;
-    font-style:italic;
-    margin-bottom:90px;
+/* =========================
+   COLONNE GAUCHE
+========================= */
 
+.about-left {
+    color: #5b4636;
+    max-width: 760px;
 }
 
-.quote{
+.about h2 {
+    font-family: "Cormorant Garamond", serif;
 
-    margin-bottom:70px;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
 
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+
+    color: #b65a38;
+
+    margin: 0 0 12px;
 }
 
-.quote p{
 
-    font-family:"Cormorant Garamond", serif;
-    font-size:3rem;
-    font-style:italic;
-    line-height:1.45;
-    margin-bottom:18px;
+/* Grand titre */
 
+.intro {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 3.4rem;
+    line-height: 1.05;
+
+    font-style: normal;
+    font-weight: 400;
+
+    color: #5b4636;
+
+    max-width: 600px;
+
+    margin: 0 0 28px;
 }
 
-.content{
 
-    display:flex;
-    flex-direction:column;
-    gap:45px;
+/* Petite ligne sous le titre */
 
+.intro::after {
+    content: "";
+    display: block;
+
+    width: 38px;
+    height: 2px;
+
+    background: #b65a38;
+
+    margin-top: 22px;
 }
 
-.content p{
 
-    font-size:1.25rem;
-    line-height:1.8;
-    max-width:900px;
+/* =========================
+   TEXTE D'INTRODUCTION
+========================= */
 
+.quote {
+    margin: 0 0 35px;
+    max-width: 600px;
 }
 
-.about-right img{
-    width:100%;
-    height:90vh;
+.quote p {
+    font-family: Arial, sans-serif;
 
-    object-fit:cover;
-}
-@media (max-width:1100px){
+    font-size: 17px;
+    line-height: 1.65;
 
-.about{
-    grid-template-columns:1fr;
-    gap:60px;
-}
+    font-style: normal;
+    font-weight: 400;
 
-.about-right{
-    margin-top:auto;
-    display:flex;
-    justify-content:center;
+    color: #5b4636;
+
+    margin: 0 0 5px;
 }
 
-.about-right img{
-    width:100%;
-    max-width:500px;
-    height:600px;
-    object-fit:cover;
+
+/* =========================
+   CONTENU
+========================= */
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 22px;
+
+    max-width: 620px;
 }
 
+.content p {
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+    line-height: 1.65;
+
+    color: #5b4636;
+
+    margin: 0;
+
+    max-width: 620px;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.about-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-right img {
+    width: 100%;
+    max-width: 500px;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   TABLETTE
+========================= */
+
+@media (max-width: 1100px) {
+
+    .about {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding: 80px 8%;
+    }
+
+    .about-left {
+        max-width: 800px;
+    }
+
+    .intro {
+        font-size: 3rem;
+    }
+
+    .about-right {
+        margin-top: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .about-right img {
+        width: 100%;
+        max-width: 600px;
+
+        height: 600px;
+
+        object-fit: cover;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .about {
+        display: flex;
+        flex-direction: column;
+
+        gap: 45px;
+
+        padding: 70px 7%;
+    }
+
+    .about h2 {
+        font-size: 0.85rem;
+
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        font-size: 2.5rem;
+        line-height: 1.05;
+
+        margin-bottom: 25px;
+    }
+
+    .intro::after {
+        margin-top: 18px;
+    }
+
+    .quote {
+        margin-bottom: 30px;
+    }
+
+    .quote p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .content {
+        gap: 20px;
+    }
+
+    .content p {
+        font-size: 0.88rem;
+        line-height: 1.65;
+    }
+
+    .about-right {
+        width: 100%;
+    }
+
+    .about-right img {
+        width: 100%;
+        max-width: none;
+
+        height: 500px;
+
+        object-fit: cover;
+    }
+}
+
+
+/* =========================
+   PETIT MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+    .about {
+        padding: 60px 6%;
+        gap: 40px;
+    }
+
+    .intro {
+        font-size: 2.2rem;
+    }
+
+    .quote p {
+        font-size: 0.85rem;
+    }
+
+    .content p {
+        font-size: 0.84rem;
+        line-height: 1.6;
+    }
+
+    .about-right img {
+        height: 420px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .about {
+        max-width: 1500px;
+    }
 }

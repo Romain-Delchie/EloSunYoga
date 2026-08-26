@@ -42,7 +42,7 @@ const Navbar = () => {
             <FaInstagram />
           </a>
 
-          <a href="https://www.facebook.com/share/1abLAoUnHF/?mibextid=wwXIfr">
+          <a href="https://www.facebook.com/share/19KYTtorYr/?mibextid=wwXIfr">
             <FaFacebookF />
           </a>
         </div>

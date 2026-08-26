@@ -1,60 +1,10 @@
 import "./About.css";
-import { useRef } from "react";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
-
 
 export default function About() {
-const sectionRef = useRef(null);
-const imageRef = useRef(null);
-const leftRef = useRef(null);
- useGSAP(() => {
-   const mm = gsap.matchMedia();
-
-   mm.add("(min-width: 1101px)", () => {
-     const section = sectionRef.current;
-     const image = imageRef.current;
-     const left = leftRef.current;
-
-     const distance = () => {
-       const sectionHeight = section.offsetHeight;
-       const imageHeight = image.offsetHeight;
-
-       return sectionHeight - imageHeight - 160;
-     };
-
-     gsap.to(image, {
-       y: distance,
-       ease: "none",
-       scrollTrigger: {
-         trigger: section,
-         start: "top top",
-         end: "bottom bottom",
-         scrub: 1,
-         invalidateOnRefresh: true,
-       },
-     });
-
-     gsap.to(left, {
-       y: 70,
-       ease: "none",
-       scrollTrigger: {
-         trigger: section,
-         start: "top top",
-         end: "bottom bottom",
-         scrub: 1,
-       },
-     });
-   });
-
-   return () => mm.revert();
- }, []);
+ 
   return (
-    <section className="about" id="about" ref={sectionRef}>
-      <div className="about-left" ref={leftRef}>
+    <section className="about" id="about" >
+      <div className="about-left">
         <h2>Qui suis-je ?</h2>
 
         <p className="intro">
@@ -103,7 +53,7 @@ const leftRef = useRef(null);
       </div>
 
       <div className="about-right">
-        <img ref={imageRef} src="/bras.jpeg" alt="Elodie Yoga" />
+        <img src="/bras.jpeg" alt="Elodie Yoga" />
       </div>
     </section>
   );
