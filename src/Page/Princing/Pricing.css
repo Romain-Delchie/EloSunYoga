@@ -72,7 +72,7 @@ content: "";
   position: absolute;
   bottom: -18px;
   left: 0;
-  width: 90px;
+  width: 40px;
   height: 2px;
    background-color: #b65a38;
 }
@@ -108,6 +108,12 @@ cursor:default;
 .pricing-block li::marker {
   color: #b65a38;
   font-size: 20px;
+}
+
+#year {
+    margin-top: 20px;
+    margin-bottom: -20px;
+    font-weight: 700;
 }
 
 .pro-section {
@@ -233,7 +239,10 @@ font-size: 17px;
     .pricing h2{
         font-size: 2.8rem;
     }
-
+  .pricing li span {
+    display: block;
+    margin-top: -10px;
+  }
     .pricing-content h3 {
         font-size: 2rem;
     }

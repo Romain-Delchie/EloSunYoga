@@ -152,7 +152,7 @@ nav li:hover{
     left:0;
 }
 
-li{
+.nav li{
     list-style:none;
     font-size:2rem;
     letter-spacing:2px;

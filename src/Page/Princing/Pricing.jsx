@@ -15,7 +15,7 @@ export default function Pricing() {
 
           <div className="pricing-block">
             <p>
-              <strong>Cours collectifs</strong> - petit groupe - 8 personnes
+              <strong>Cours collectifs</strong> : petit groupe - 8 personnes
               maximum
             </p>
 
@@ -27,11 +27,15 @@ export default function Pricing() {
               <li>20 séances 350€ (6 mois)</li>
             </ul>
 
-            <p>A l'année :</p>
+            <p id="year">A l'année :</p>
 
             <ul>
-              <li>1 séance par semaine 490€ (13€ la séance)</li>
-              <li>2 séances par semaine 760€ (10€ la séance)</li>
+              <li>
+                1 séance par semaine 490€ <span>(13€ la séance)</span>
+              </li>
+              <li>
+                2 séances par semaine 760€ <span>(10€ la séance)</span>
+              </li>
             </ul>
           </div>
 
