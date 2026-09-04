@@ -51,10 +51,11 @@
 
 .company p {
     font-family: Arial, sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     color: #5b4636;
     line-height: 2;
     margin-bottom: 12px;
+    font-weight: 400;
 }
 
 @media (max-width: 1100px) {
