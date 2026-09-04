@@ -1,28 +1,14 @@
 import { useState } from "react";
 import { FaInstagram, FaFacebookF, FaBars, FaTimes } from "react-icons/fa";
-import gsap from "gsap";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { scrollToSection } from "../../utils/scrollTo";
 import "./Navbar.css";
-
-gsap.registerPlugin(ScrollToPlugin);
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const goTo = (id) => {
     setOpen(false);
-
-    const navbar = document.querySelector(".navbar");
-    const offsetY = navbar ? navbar.offsetHeight : 80;
-
-    gsap.to(window, {
-      duration: 1.2,
-      ease: "power3.inOut",
-      scrollTo: {
-        y: "#" + id,
-        offsetY,
-      },
-    });
+    scrollToSection(id);
   };
 
   return (
@@ -37,6 +23,7 @@ const Navbar = () => {
           <li onClick={() => goTo("about")}>À PROPOS</li>
           <li onClick={() => goTo("yoga")}>YOGA</li>
           <li onClick={() => goTo("pricing")}>TARIFS & PLANNING</li>
+          <li onClick={() => goTo("evenements")}>ÉVÉNEMENTS</li>
           <li onClick={() => goTo("contact")}>CONTACT</li>
         </nav>
 

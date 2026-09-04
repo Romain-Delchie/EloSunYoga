@@ -116,6 +116,14 @@ nav li:hover{
     cursor:pointer;
     z-index:1002;
 }
+@media (max-width:1055px){
+nav{
+    gap: 28px;
+}
+.social{
+    gap: 10px;
+}
+}
 @media (max-width:900px){
 
 .navbar{
@@ -154,11 +162,13 @@ nav li:hover{
 
 .nav li{
     list-style:none;
-    font-size:2rem;
+    font-size:1.8rem;
     letter-spacing:2px;
     cursor:pointer;
    text-align: center;
 }
-
+.social{
+    gap: 24px;
+}
 
 }

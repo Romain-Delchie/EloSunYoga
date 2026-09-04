@@ -215,12 +215,15 @@ section {
     .intro {
         font-size: 2.5rem;
         line-height: 1.05;
-
-        margin-bottom: 25px;
+text-align: center;
+        margin-bottom: 50px;
     }
 
     .intro::after {
         margin-top: 18px;
+        position: absolute;
+         left: 50%;
+        transform: translateX(-50%);
     }
 
     .quote {
@@ -230,6 +233,7 @@ section {
     .quote p {
         font-size: 0.9rem;
         line-height: 1.6;
+        text-align: center;
     }
 
     .content {
@@ -239,6 +243,7 @@ section {
     .content p {
         font-size: 0.88rem;
         line-height: 1.65;
+        text-align: center;
     }
 
     .about-right {
@@ -270,7 +275,7 @@ section {
     }
 
     .intro {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 
     .quote p {

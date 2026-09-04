@@ -110,51 +110,6 @@ cursor:default;
   font-size: 20px;
 }
 
-.pro-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 200px;
-}
-
-.pro-image img {
-    width: 500px;
-    display: block;
-    margin: 0 auto;
-}
-
-.company{
-width: 450px;
-    max-width:900px;
-
-}
-
-.company h3{
-
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:2.3rem;
-
-    text-decoration:underline;
-
-    margin-bottom:40px;
-
-}
-
-.company p{
-
-    font-family: Arial, sans-serif;
-
-    font-size:20px;
-
-     color: #5b4636;
-
-    line-height:2;
-
-    margin-bottom:12px;
-
-}
-
 @media(max-width:1100px){
 
 .pricing-top{
@@ -177,17 +132,6 @@ font-size: 17px;
 }
 .pricing-content{
     margin-top: 50px;
-}
-.pro-image img{
-    max-width:420px;
-    width: 350px;
-    margin:auto;
-}
-.company{
-    padding: 0 20px;
-}
-.company p {
-    line-height: 1.3;
 }
 }
 
@@ -224,17 +168,7 @@ font-size: 17px;
         padding-left: 25px;
         margin: 18px auto;
     }
-    .pro-section {
-        flex-direction: column;
-        gap: 80px;
-    }
-
-    .company p {
-        text-align: center;
-    }
-
-    .pricing-image img,
-    .pro-image img{
+    .pricing-image img{
         width: 100%;
         max-width: 380px;
         margin: 0 auto;
@@ -243,24 +177,23 @@ font-size: 17px;
 
 @media(max-width:500px) {
     .pricing h2{
-        font-size: 2.8rem;
+        font-size: 1.8rem;
     }
   .pricing li span {
     display: block;
     margin-top: -10px;
   }
     .pricing-content h3 {
-        font-size: 2rem;
-    }
-    .company{
-    padding: 0 80px;
+        font-size: 1.6rem;
     }
 
-    .pricing-image img,
-    .pro-image img{
-        width: 100%;
+    .pricing-image img{
+        width: 90%;
         max-width: 320px;
         margin: 0 auto;
+    }
+    .pro-image{
+        width: 90%;
     }
 
 }
