@@ -37,7 +37,12 @@ export default function Pricing() {
 
           <div className="pricing-block">
             <p>
-              <strong>Cours particuliers</strong> : Vinyasa - Chaise & Yin Yoga
+              <strong>
+                <u>Cours particuliers</u>
+              </strong>{" "}
+              :
+              <br />
+              Vinyasa - Chaise & Yin Yoga
             </p>
 
             <p>Durée : 60 mins - en ligne ou en présentiel</p>
