@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar/Navbar";
+import PromoPopup from "../../components/PromoPopup/PromoPopup";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Hero from "../Hero/Hero";
@@ -20,6 +21,8 @@ const Home = () => {
         <Pricing />
         <Contact />
       </main>
+
+      <PromoPopup />
     </>
   );
 };

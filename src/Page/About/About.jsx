@@ -53,7 +53,7 @@ export default function About() {
       </div>
 
       <div className="about-right">
-        <img src="/bras.jpeg" alt="Elodie Yoga" />
+        <img src="/elodie.jpeg" alt="Elodie Yoga" />
       </div>
     </section>
   );

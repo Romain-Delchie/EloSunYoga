@@ -1,20 +1,8 @@
 import "./ConstructionPage.css";
 import { FaInstagram,  FaFacebookF } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { useEffect, useState } from "react";
+import PromoPopup from "../../components/PromoPopup/PromoPopup";
 
 export default function ConstructionPage() {
-
-const [popupOpen, setPopupOpen] = useState(false);
-
-useEffect(() => {
-  const timer = setTimeout(() => {
-    setPopupOpen(true);
-  }, 1000);
-
-  return () => clearTimeout(timer);
-}, []);
-
   return (
     <section className="construction">
       <div className="construction__overlay" />
@@ -60,33 +48,8 @@ useEffect(() => {
           </a>
         </div>
       </div>
-      <div
-        className={`promo-popup ${
-          popupOpen ? "promo-popup--open" : "promo-popup--closed"
-        }`}
-      >
-        <button
-          className="promo-popup__close"
-          onClick={() => setPopupOpen(false)}
-        >
-          ✕
-        </button>
 
-        <img
-          src="/tarif popup.jpeg"
-          alt="Offre Harmonie"
-          className="promo-popup__image"
-        />
-
-        <button
-          className="promo-popup__tab"
-          onClick={() => setPopupOpen(!popupOpen)}
-        >
-          <span className="promo-popup__arrow">{popupOpen ? "❯" : "❮"}</span>
-
-          <span className="promo-popup__text">Offre Harmonie</span>
-        </button>
-      </div>
+      <PromoPopup />
     </section>
   );
 }

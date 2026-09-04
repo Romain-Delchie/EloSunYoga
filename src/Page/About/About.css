@@ -195,7 +195,7 @@ section {
    MOBILE
 ========================= */
 
-@media (max-width: 700px) {
+@media (max-width: 906px) {
 
     .about {
         display: flex;
@@ -247,11 +247,13 @@ section {
 
     .about-right img {
         width: 100%;
-        max-width: none;
+        max-width: 380px;
 
-        height: 500px;
+        height: 420px;
 
         object-fit: cover;
+
+        margin: 0 auto;
     }
 }
 
@@ -281,7 +283,9 @@ section {
     }
 
     .about-right img {
-        height: 420px;
+        max-width: 320px;
+
+        height: 360px;
     }
 }
 

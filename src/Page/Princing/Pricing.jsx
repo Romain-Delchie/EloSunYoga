@@ -15,8 +15,12 @@ export default function Pricing() {
 
           <div className="pricing-block">
             <p>
-              <strong>Cours collectifs</strong> : petit groupe - 8 personnes
-              maximum
+              <strong>
+                <u>Cours collectifs</u>
+              </strong>{" "}
+              :
+              <br />
+              petit groupe - 8 personnes maximum
             </p>
 
             <p>Durée : 60 mins</p>
@@ -25,16 +29,8 @@ export default function Pricing() {
               <li>Séance découverte 10€</li>
               <li>Séance à l'unité 20€</li>
               <li>20 séances 350€ (6 mois)</li>
-            </ul>
-
-            <p id="year">A l'année :</p>
-
-            <ul>
               <li>
-                1 séance par semaine 490€ <span>(13€ la séance)</span>
-              </li>
-              <li>
-                2 séances par semaine 760€ <span>(10€ la séance)</span>
+                À l'année 490€ <span>(13€ la séance)</span>
               </li>
             </ul>
           </div>
@@ -47,7 +43,7 @@ export default function Pricing() {
             <p>Durée : 60 mins - en ligne ou en présentiel</p>
 
             <ul>
-              <li>Séance à l'unité 70€ sur Salon de Provence et alentours</li>
+              <li>Séance à l'unité 70€ Pays Salonais</li>
             </ul>
 
             <p>Tarif modifiable selon la distance.</p>
@@ -56,32 +52,40 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-      <h2>Yoga en entreprise</h2>
+      <h2>Événements:</h2>
       <div className="pricing-bottom">
         <div className="pro-section">
           <div className="company">
             <p>
-              Je propose des séances de yoga sur chaise, sur mesure, en fonction
-              de vos besoins.
+              Et si vous faisiez de votre événement un véritable moment de
+              bien-être et de connexion ?
             </p>
 
             <p>
-              Une pause bien-être pour vos collaborateurs, une source de
-              détente, de concentration et de motivation.
+              EVJF, anniversaire, événement privé ou séance de yoga en
+              entreprise…
+              <br />
+              Je vous propose des séances personnalisées, imaginées en
+              fonction de votre groupe, de votre lieu et de l'ambiance que
+              vous souhaitez créer.
             </p>
 
             <p>
-              Chaque entreprise est unique : je vous envoie un devis
-              personnalisé sur demande.
+              À travers le mouvement, la respiration et la relaxation, je
+              vous invite à ralentir, vous reconnecter à vous-même et
+              profiter pleinement de l'instant présent, tout en partageant
+              une expérience unique avec vos proches ou vos collègues.
             </p>
 
             <p>
-              Contactez-moi pour en discuter et créer ensemble une offre
-              adaptée.
+              Parce que chaque groupe est différent, je place l'écoute, la
+              bienveillance et l'adaptation au cœur de mes séances.
             </p>
+
+            <p>Une parenthèse hors du quotidien, pour prendre soin de soi… ensemble. 🌿</p>
           </div>
           <div className="pro-image">
-            <img src="/entreprise.png" alt="Yoga en entreprise" />
+            <img src="/yoga.jpeg" alt="elodie fait du yoga" />
           </div>
         </div>
       </div>

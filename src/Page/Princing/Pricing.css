@@ -110,12 +110,6 @@ cursor:default;
   font-size: 20px;
 }
 
-#year {
-    margin-top: 20px;
-    margin-bottom: -20px;
-    font-weight: 700;
-}
-
 .pro-section {
     display: flex;
     justify-content: space-around;
@@ -124,7 +118,9 @@ cursor:default;
 }
 
 .pro-image img {
-    width: 600px;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
 }
 
 .company{
@@ -165,12 +161,11 @@ width: 450px;
 
     grid-template-columns:1fr;
 
-    gap:60px;
-
 }
 .pricing p {
 font-size: 17px;
 }
+
 .pricing li {
 font-size: 17px;
 }
@@ -180,8 +175,12 @@ font-size: 17px;
     width: 350px;
     margin:auto;
 }
+.pricing-content{
+    margin-top: 50px;
+}
 .pro-image img{
-    max-width:320px;
+    max-width:420px;
+    width: 350px;
     margin:auto;
 }
 .company{
@@ -233,6 +232,13 @@ font-size: 17px;
     .company p {
         text-align: center;
     }
+
+    .pricing-image img,
+    .pro-image img{
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
 }
 
 @media(max-width:500px) {
@@ -248,6 +254,13 @@ font-size: 17px;
     }
     .company{
     padding: 0 80px;
+    }
+
+    .pricing-image img,
+    .pro-image img{
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
     }
 
 }
